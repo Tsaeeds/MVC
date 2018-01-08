@@ -33,7 +33,7 @@
 
             <div class="form-group">
                 <label for="Exclude" class="control-label">Exclude</label>
-                <input type="text" id="Exclude" value="@ViewBag.Exclude" name="Exclude" class="form-control" />
+                <input type="text" id="Exclude" value="@(ViewBag.Exclude != null ? ViewBag.Exclude.ToString() : "")" name="Exclude" class="form-control" />
             </div>
 
         </div>
