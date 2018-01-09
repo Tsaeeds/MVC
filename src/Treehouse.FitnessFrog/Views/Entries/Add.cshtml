@@ -6,6 +6,8 @@
 
 }
 
+@Html.ValidationSummary("The following errors were founnd: ", new { @class = "alert alert-danger" })
+
 <h2>@ViewBag.Title</h2>
 
 @using (Html.BeginForm())
